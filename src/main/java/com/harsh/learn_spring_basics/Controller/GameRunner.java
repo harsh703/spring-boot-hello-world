@@ -1,10 +1,14 @@
 package com.harsh.learn_spring_basics.Controller;
 
 import com.harsh.learn_spring_basics.game.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class GameRunner {
 
-    GamingConsole game;
+    @Autowired
+    private GamingConsole game;
 
     public GameRunner(GamingConsole game) {
         this.game = game;

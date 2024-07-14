@@ -1,5 +1,7 @@
 package com.harsh.learn_spring_basics.game;
 
+import org.springframework.stereotype.Component;
+
 public class Pacman implements GamingConsole{
 
     public void up(){
